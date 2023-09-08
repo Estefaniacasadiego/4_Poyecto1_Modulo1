@@ -1,7 +1,45 @@
 body{
-    background-color: black;
+    background: url(https://www.expoknews.com/wp-content/uploads/2022/09/Aviones-cero-emisiones.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+
 }
 
-p{
-    font-size: small;
+.logo{
+    display:inline-block;
+    align-items: center;
+}
+
+.logo img{
+    height: 10vh;
+    margin-right: 10vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 3vh;
+
+}
+
+header{
+    display: flex;
+    min-height: 5vh;
+    background-color: rgb(169, 239, 248);
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vh;
+}
+
+
+nav a{
+    padding-right: 5vh;
+}
+
+nav a:hover{
+    color: rgb(13, 24, 129);
+	transition-duration: 0.3s;
+
 }
