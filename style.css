@@ -1,43 +1,52 @@
-body{
-    background: no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  padding:0;
+  margin: 0;
+  text-decoration:none;
+  box-sizing: borde-box;
 }
 
-.logo{
-    display:inline-block;
-    align-items: center;
+nav{
+  background: black;
+  height: 40vh;
+  width: 100%;
 }
 
-.logo img{
-    height: 10vh;
-    margin-right: 10vh;
+li, a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16vw;
+  color: white  
 }
 
-a{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 3vh;
-
+.logo {
+  display:inline-block;
+  float: left;
+  padding: 15vh;
+  margin-left: 6vh
 }
 
-header{
-    margin:10% auto ;
-    min-height: 5vh;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 5vh;
+.menu_izq li {
+  display:inline-block;
+  float: left;
+  padding: 15vh;
+  margin-left: -10vh
 }
 
+.menu_der li {
+  display:inline-block;
+  float: right;
+  padding: 15vh;
+  margin-right: -6vh ;
+}
 
 nav a{
-    padding-right: 5vh;
+  padding-right: 5vh; 
 }
 
 nav a:hover{
-    color: rgb(255, 227, 68);
+  color:grey;
+  font-weight: 500;
 	transition-duration: 0.3s;
-
 }
+
