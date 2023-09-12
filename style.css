@@ -1,52 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 *{
+  box-sizing: borde-box;
   padding:0;
   margin: 0;
-  text-decoration:none;
-  box-sizing: borde-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-nav{
-  background: black;
-  height: 40vh;
-  width: 100%;
-}
-
-li, a{
+body{
   font-family: 'Roboto', sans-serif;
-  font-size: 16vw;
-  color: white  
+  margin: 0;
+}
+
+header{
+  margin: 1vh;
+  border: 1vh;
+  padding: 0%;
+  width: auto;
+  height: 16vh;
+  background: black;
 }
 
 .logo {
-  display:inline-block;
+  width: 16vh;
+  padding-top: 2vh;
+  margin-left: auto;
   float: left;
-  padding: 15vh;
-  margin-left: 6vh
+}
+
+a {
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  color: white; 
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
 }
 
 .menu_izq li {
-  display:inline-block;
+  padding:0 10px;	
   float: left;
-  padding: 15vh;
-  margin-left: -10vh
+  padding-top: 6vh;
 }
 
 .menu_der li {
-  display:inline-block;
+  padding:0 10px;	
   float: right;
-  padding: 15vh;
-  margin-right: -6vh ;
+  padding-top: 6vh;
+  margin-right: 1vh;
 }
 
-nav a{
-  padding-right: 5vh; 
+.figuras{
+  width: 5vh;
+  padding-top:6vh;
+  margin-right: 3vh;
+  float: right;
 }
 
-nav a:hover{
-  color:grey;
+.figuras2{
+  width: 5vh;
+  padding-top:6vh;
+  margin-right: 3vh;
+  float: right;
+}
+
+a:hover{
+  color:rgb(211, 151, 22);
   font-weight: 500;
 	transition-duration: 0.3s;
 }
 
+
+.box{
+  margin: 0vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+video{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-left: 5vh;
+  padding-top:5%;
+  mask-position: 60%;
+  line-height: 2vh;
+  text-align: left;
+  width: 100%;
+  height: 88vh;
+}
+h2{
+  padding: 4vh;
+  line-height: 10vh;
+}
+
+article{
+ margin: auto;
+ padding: auto;
+}
+footer{
+  margin: auto;
+ padding: auto;
+}
