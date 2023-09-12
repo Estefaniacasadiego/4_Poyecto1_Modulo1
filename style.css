@@ -1,45 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: borde-box;
+  padding:0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
 body{
-    background: url(https://www.expoknews.com/wp-content/uploads/2022/09/Aviones-cero-emisiones.jpg) no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-
-}
-
-.logo{
-    display:inline-block;
-    align-items: center;
-}
-
-.logo img{
-    height: 10vh;
-    margin-right: 10vh;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 3vh;
-
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 header{
-    display: flex;
-    min-height: 5vh;
-    background-color: rgb(169, 239, 248);
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 5vh;
+  margin: 1vh;
+  border: 1vh;
+  padding: 0%;
+  width: auto;
+  height: 16vh;
+  background: black;
 }
 
-
-nav a{
-    padding-right: 5vh;
+.logo {
+  width: 16vh;
+  padding-top: 2vh;
+  margin-left: auto;
+  float: left;
 }
 
-nav a:hover{
-    color: rgb(13, 24, 129);
+a {
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  color: white; 
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
+}
+
+.menu_izq li {
+  padding:0 10px;	
+  float: left;
+  padding-top: 6vh;
+}
+
+.menu_der li {
+  padding:0 10px;	
+  float: right;
+  padding-top: 6vh;
+  margin-right: 1vh;
+}
+
+.figuras{
+  width: 5vh;
+  padding-top:6vh;
+  margin-right: 3vh;
+  float: right;
+}
+
+.figuras2{
+  width: 5vh;
+  padding-top:6vh;
+  margin-right: 3vh;
+  float: right;
+}
+
+a:hover{
+  color:rgb(211, 151, 22);
+  font-weight: 500;
 	transition-duration: 0.3s;
+}
 
+
+.box{
+  margin: 0vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+video{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-left: 5vh;
+  padding-top:5%;
+  mask-position: 60%;
+  line-height: 2vh;
+  text-align: left;
+  width: 100%;
+  height: 88vh;
+}
+h2{
+  padding: 4vh;
+  line-height: 10vh;
+}
+
+article{
+ margin: auto;
+ padding: auto;
+}
+footer{
+  margin: auto;
+ padding: auto;
 }
