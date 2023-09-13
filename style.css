@@ -14,8 +14,8 @@ body{
 }
 
 header{
-  margin: 1vh;
-  border: 1vh;
+  margin: 0px;
+  border: 0px;
   padding: 0%;
   width: auto;
   height: 16vh;
@@ -24,7 +24,7 @@ header{
 
 .logo {
   width: 16vh;
-  padding-top: 2vh;
+  padding-top: 0vh;
   margin-left: auto;
   float: left;
 }
@@ -95,23 +95,114 @@ video{
   font-family: 'Roboto', sans-serif;
   color: white;
   padding-left: 5vh;
-  padding-top:5%;
+  padding-top:8%;
   mask-position: 60%;
-  line-height: 2vh;
+  line-height: 8vh;
   text-align: left;
-  width: 100%;
-  height: 88vh;
-}
-h2{
-  padding: 4vh;
-  line-height: 10vh;
+  width: 96%;
+  height: 70.3vh;
 }
 
-article{
- margin: auto;
- padding: auto;
+
+/*main*/
+
+.img_main{
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-image: url(fondo\ azul\ pg.jpg);
+  position: relative;
+  display: flex;
+
 }
-footer{
-  margin: auto;
- padding: auto;
+
+.container{
+  position: relative;
+  height: 100vh;
+  width: 98.7vw;
+}
+
+.my_class{
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 5vh;
+  font-weight: bold;
+  left: 31vw;
+  top: 8vh;
+
+
+}
+
+
+.t1{
+  text-align: center;
+  margin-top: 5vh;
+  position: absolute;
+  color: white;
+  font-size: 5vh;
+  font-weight: bold;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  top: 15vh;
+}
+
+
+
+
+/*footer*/
+.footer{
+  background-color: black;
+  color: white;
+  padding: 20px 10px 5px 10px;
+  font-family: 'Roboto light', sans-serif;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.footer_p1{
+  color: white;
+  margin: 20px 0px 30px 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+.EMPRESA{
+  color: white;
+  padding: 0vh 2vw 0vh 0vw;
+}
+
+.EMPLEO{
+  color: white;
+  padding: 0vh 2vw 0vh 0vw;
+}
+
+.CONTACTO{
+  color: white;
+  padding: 0vh 2vw 0vh 0vw;
+}
+
+.SOSTENIBILIDAD{
+  color: white;
+  padding: 0vh 2vw 0vh 0vw;
+}
+
+.Copyright1{
+  padding-left: 5px;
+  margin: 10px 0px 0px 13px;
+}
+
+.Copyright1_1{
+  margin: 0px 0px 15px 13px;
+  padding-left: 5px;
+}
+
+.Copyright2{
+  margin: 20px 0px 0px 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+.Copyright2_1{
+  margin: 5px 0px 20px 0px;
+  padding: 0px 10px 0px 10px;
 }
