@@ -33,9 +33,9 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.2vw;
-  color: white; 
   font-family: 'Roboto', sans-serif;
   position: relative;
+  color: white;
 
 }
 
@@ -106,34 +106,25 @@ video{
 
 /*main*/
 
-.img_main{
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
+.container_1{
   background-image: url(fondo\ azul\ pg.jpg);
   position: relative;
-  display: flex;
-
-}
-
-.container{
-  position: relative;
   height: 100vh;
-  width: 98.7vw;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
 }
 
 .my_class{
-  z-index: 100;
+  z-index: 1;
   position: absolute;
   color: white;
   font-size: 5vh;
   font-weight: bold;
   left: 31vw;
   top: 8vh;
-
-
 }
-
 
 .t1{
   text-align: center;
@@ -148,10 +139,74 @@ video{
 }
 
 
+.figura1{ 
+  background-image: url(caño\ cristales.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50vh 70vh;
+  margin: 10vh;
+  display: inline-block ;
+  border: 2px solid rgb(3, 76, 185);
+  overflow: hidden;
+  width: 40vh;
+  height: 30vh;
+  margin-left: 12vw;
+  position: relative;
+  margin-top: 55vh;
+}
+
+.figura2{
+  background-image: url(PENOL2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50vh 70vh;
+  margin: 10vh;
+  display: inline-block ;
+  border: 2px solid rgb(3, 76, 185);
+  overflow: hidden;
+  width: 40vh;
+  height: 30vh;
+  position: relative;
+}
+
+.figura3{
+  background-image: url(moserrate.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50vh 70vh;
+  margin: 10vh;
+  display: inline-block;
+  border: 2px solid rgb(3, 76, 185);
+  overflow: hidden;
+  width: 40vh;
+  height: 30vh;
+  position: relative;
+}
+
+h4{
+  transition:all 0.3s;
+  color: white;
+  background: #ffffff26;
+  position: absolute;
+  left: 0px;
+  bottom: -150px;
+  width: 90%;
+  padding: 5%
+}
+
+figure:hover h4{
+  bottom:0px;
+}
+
+
+
+
+
+
 
 
 /*footer*/
-.footer{
+footer{
   background-color: black;
   color: white;
   padding: 20px 10px 5px 10px;
