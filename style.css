@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-*{
+* {
   box-sizing: borde-box;
-  padding:0;
+  padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
-header{
+header {
   margin: 0px;
   border: 0px;
   padding: 0%;
@@ -40,40 +40,40 @@ a {
 }
 
 .menu_izq li {
-  padding:0 10px;	
+  padding: 0 10px;
   float: left;
   padding-top: 6vh;
 }
 
 .menu_der li {
-  padding:0 10px;	
+  padding: 0 10px;
   float: right;
   padding-top: 6vh;
   margin-right: 1vh;
 }
 
-.figuras{
+.figuras {
   width: 5vh;
-  padding-top:6vh;
+  padding-top: 6vh;
   margin-right: 3vh;
   float: right;
 }
 
-.figuras2{
+.figuras2 {
   width: 5vh;
-  padding-top:6vh;
+  padding-top: 6vh;
   margin-right: 3vh;
   float: right;
 }
 
-a:hover{
-  color:rgb(211, 151, 22);
+a:hover {
+  color: rgb(211, 151, 22);
   font-weight: 500;
-	transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 
-.box{
+.box {
   margin: 0vh;
   top: 0;
   left: 0;
@@ -83,7 +83,7 @@ a:hover{
   overflow: hidden;
 }
 
-video{
+video {
   top: 0;
   left: 0;
   width: 100%;
@@ -91,11 +91,11 @@ video{
   object-fit: cover;
 }
 
-.text-p{
+.text-p {
   font-family: 'Roboto', sans-serif;
   color: white;
   padding-left: 5vh;
-  padding-top:8%;
+  padding-top: 8vh;
   mask-position: 60%;
   line-height: 8vh;
   text-align: left;
@@ -106,17 +106,18 @@ video{
 
 /*main*/
 
-.container_1{
+.container_1 {
   background-image: url(fondo\ azul\ pg.jpg);
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 0px;
+
 }
 
-.my_class{
+
+.my_class {
   z-index: 1;
   position: absolute;
   color: white;
@@ -126,7 +127,7 @@ video{
   top: 8vh;
 }
 
-.t1{
+.t1 {
   text-align: center;
   margin-top: 5vh;
   position: absolute;
@@ -139,14 +140,14 @@ video{
 }
 
 
-.figura1{ 
+.figura1 {
   background-image: url(caño\ cristales.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50vh 70vh;
   margin: 10vh;
-  display: inline-block ;
-  border: 2px solid rgb(3, 76, 185);
+  display: inline-block;
+  border: 2px solid rgb(253, 254, 255);
   overflow: hidden;
   width: 40vh;
   height: 30vh;
@@ -155,36 +156,36 @@ video{
   margin-top: 55vh;
 }
 
-.figura2{
+.figura2 {
   background-image: url(PENOL2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50vh 70vh;
   margin: 10vh;
-  display: inline-block ;
-  border: 2px solid rgb(3, 76, 185);
+  display: inline-block;
+  border: 2px solid rgb(255, 255, 255);
   overflow: hidden;
   width: 40vh;
   height: 30vh;
   position: relative;
 }
 
-.figura3{
+.figura3 {
   background-image: url(moserrate.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50vh 70vh;
   margin: 10vh;
   display: inline-block;
-  border: 2px solid rgb(3, 76, 185);
+  border: 2px solid rgb(255, 255, 255);
   overflow: hidden;
   width: 40vh;
   height: 30vh;
   position: relative;
 }
 
-h4{
-  transition:all 0.3s;
+h4 {
+  transition: all 0.3s;
   color: white;
   background: #ffffff26;
   position: absolute;
@@ -194,19 +195,110 @@ h4{
   padding: 5%
 }
 
-figure:hover h4{
-  bottom:0px;
+figure:hover h4 {
+  bottom: 0px;
 }
 
+.container_2{
+  background-image:url(orocolombia.jpg);
+  background-repeat: no-repeat;
+  background-size: 210vh 100vh;
+  display: inline-block;
+  height: 90vh;
+  position: relative;
+  width: 100%;
+ }
 
+ .RIQUEZAS {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-left: 5vh;
+  padding-top: 7vh;
+  mask-position: 60%;
+  line-height: 8vh;
+  text-align: left;
+  width: 96%;
+  height: 10vh;
+  font-size: 3vw;
+}
+.riquezat {
+  text-align: left;
+  margin-top: 3vh;
+  position: absolute;
+  color: white;
+  font-size: 4.5vh;
+  font-weight: bold;
+  margin-left: 2.2vw;
+  top: 15vh;
+}
+.container_3{
+  background-image:url(Biodiversidad.jpg);
+  background-repeat: no-repeat;
+  background-size: 210vh 100vh;
+  display: inline-block;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+ }
 
+ .LLAMATIVO {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-left: 5vh;
+  padding-top: 37vh;
+  mask-position: 60%;
+  line-height: 8vh;
+  text-align: center;
+  width: 96%;
+  height: 10vh;
+  font-size: 3vw;
+}
+.llamativot {
+  text-align: center;
+  margin-top: 35vh;
+  position: absolute;
+  color: white;
+  font-size: 4.5vh;
+  font-weight: bold;
+  margin-left: 2.2vw;
+  top: 15vh;
+}
+.container_4{
+  background-image:url(bogota2.jpg);
+  background-repeat: no-repeat;
+  background-size: 210vh 100vh;
+  display: inline-block;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+ }
 
+ .VIVE {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-left: 20vh;
+  padding-top: 18vh;
+  mask-position: 60%;
+  line-height: 8vh;
+  text-align: left;
+  width: 96%;
+  height: 10vh;
+  font-size: 3vw;
+}
+.vivet {
+  
+  text-align: center;
+  margin-top: 25vh;
+  position: absolute;
+  color: white;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-right: 60.5vw;
+  margin-left: 6.3vw;
+  top: 15vh;
+  }
 
-
-
-
-/*footer*/
-footer{
+footer {
   background-color: black;
   color: white;
   padding: 20px 10px 5px 10px;
@@ -216,48 +308,48 @@ footer{
   left: 0;
 }
 
-.footer_p1{
+.footer_p1 {
   color: white;
   margin: 20px 0px 30px 0px;
   padding: 0px 10px 0px 10px;
 }
 
-.EMPRESA{
+.EMPRESA {
   color: white;
   padding: 0vh 2vw 0vh 0vw;
 }
 
-.EMPLEO{
+.EMPLEO {
   color: white;
   padding: 0vh 2vw 0vh 0vw;
 }
 
-.CONTACTO{
+.CONTACTO {
   color: white;
   padding: 0vh 2vw 0vh 0vw;
 }
 
-.SOSTENIBILIDAD{
+.SOSTENIBILIDAD {
   color: white;
   padding: 0vh 2vw 0vh 0vw;
 }
 
-.Copyright1{
+.Copyright1 {
   padding-left: 5px;
   margin: 10px 0px 0px 13px;
 }
 
-.Copyright1_1{
+.Copyright1_1 {
   margin: 0px 0px 15px 13px;
   padding-left: 5px;
 }
 
-.Copyright2{
+.Copyright2 {
   margin: 20px 0px 0px 0px;
   padding: 0px 10px 0px 10px;
 }
 
-.Copyright2_1{
+.Copyright2_1 {
   margin: 5px 0px 20px 0px;
   padding: 0px 10px 0px 10px;
 }
