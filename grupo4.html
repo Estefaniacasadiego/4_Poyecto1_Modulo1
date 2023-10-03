@@ -10,12 +10,12 @@
 
 </head>
 
-<body>
+<body id="buscador_viaje">
 
     <header>
-
+    <!--menu -->
         <nav class="nav container" id="nav">
-            <img class="logo" , src="recursos/logo.png">
+            <img src="recursos/logo.png" class="logo">
 
             <ul class="nav__links">
                 <a href="#conoce" class="nav__link">Conoce</a>
@@ -31,37 +31,188 @@
                 </li>
             </ul>
 
+            <!-- menu hamburguesa-->
+
+            <a href="#nav" class="nav__hamburguer">
+                <img src="./recursos/menu.svg" class="nav__icon">
+            </a>
+            <a href="#" class="nav__close">
+                <img src="./recursos/close.svg" class="nav__icon">
+            </a>
+            
         </nav>
+    </header>
+  
+    <!-- video -->
+
         <div class="back"></div>
         <video autoplay loop muted>
             <source src="recursos/video.mp4" type="video/mp4">
         </video>
 
+        <!-- texto video-->
+
         <section class="box3">
             <h1 class="text1">Viaja por Colombia</h1>
             <p class="text2">"Descubre la magia de Colombia: ¡Tu aventura te espera!"</p>
-            <a class="one" href="#">CONÓCENOS</a>
+            <a class="one btn-1" href="#">Registrate</a>
         </section>
 
-    </header>
-    <main>
+        
+
+        <!-- titulo texto y imagenes -->
+
         <article class="container_1">
             <section id="conoce">
                 <h2 class="my_class">Toda una belleza hecha país</h2>
-                <p class="t1">"La diversidad es su esencia"</p>
-                <section class="section_container_1">
-                    <figure class="figura1">
-                        <h4>CAÑO CRISTALES</h4>
-                    </figure>
-                    <figure class="figura2">
-                        <h4>PIEDRA DEL PEÑOL</h4>
-                    </figure>
-                    <figure class="figura3">
-                        <h4>MONSERRATE</h4>
-                    </figure>
-                </section>
-            </section>
+                <p class="t1">"La diversidad es su esencia" Conoce los sitios de temporada</p>
+
+                <section class="wrapper">
+                    <section class="card">
+                        <section class="poster"><img src="recursos/caño cristales.jpg" alt="Location Unknown"></section>
+                        <section class="details">
+                            <h1>Caño Cristales</h1>
+                      <p class="desc">
+                                Río de los Cinco Colores
+                            </p>
+                                    <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form>
+                            <p class="desc">
+                                En los Llanos Orientales colombianos se encuentra una auténtica joya de la naturaleza que te sorprenderá: se trata de Caño Cristales, uno de los ríos más hermosos del mundo.
+                            </p>
+                        <p class="desc">
+                               <b> $700.000 / persona</b>
+                            </p>
+                        </section>
+                    </section>
+                    <section class="card">
+                        <section class="poster"><img src="recursos/san andres.jpg" alt="Location Unknown"></section>
+                        <section class="details">
+                            <h1>San Andrés Isla</h1>
+                          <p class="desc">
+                                Un auténtico paraíso
+                            </p>
+                        <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form>
+                            <p class="desc">
+                                Cerca de cuarenta sitios para bucear, unas de las mejores playas del Caribe, un mar azul pero que también es verde y de tonos lila, y gente llena de amabilidad, ubicadas en el Caribe colombiano.
+                            </p>
+                                 <p class="desc">
+                                <b>$1'000.000 / persona</b>
+                            </p>
+                        </section>
+                    </section>
+                    <section class="card">
+                        <section class="poster"><img src="recursos/sierra.jpg" alt="Location Unknown"></section>
+                        <section class="details">
+                            <h1>Sierra Nevada</h1>
+                      <p class="desc">
+                                Destino turístico mágico
+                            </p>
+                        <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form>
+                            <p class="desc">
+                                Al adentrarte en la Sierra Nevada tendrás la oportunidad de encontrarte con la belleza y la exuberancia de una variedad de ecosistemas y naturaleza, todo en un solo lugar.
+                            </p>
+                         <p class="desc">
+                                <b>$950.000 / persona</b>
+                            </p>
+                        </section>
+                    </section>       
         </article>
+
+        <!-- imagen estatica con texto --> 
+
         <article class="container_2">
             <section class="section_container_2">
                 <p class="riqueza"> "Colombia, donde el ritmo de la vida baila al compás del corazón de la naturaleza."
@@ -69,6 +220,7 @@
             </section>
         </article>
 
+        <!-- 3 secciones o articulos texto e imagen --> 
         <article>
             <section id="comida" class="container_2_2">
                 <section class="text_container_2_2">
@@ -117,9 +269,12 @@
                     <figure class="img_bogotá">
                         <h3>COLOMBIANOS</h3>
                     </figure>
-
                 </section>
             </section>
+            </article>
+
+            <!-- comentarios --> 
+            <article>
             <section class="container_5"></section>
             <h5> Queremos mejorar, dejanos tu comentario:</h5>
                 <div class="comment-container">
@@ -129,7 +284,22 @@
                 <div id="comment-list">
                 </div>
                 </section>
-        </article>
+            </article>
+
+    <!-- icono busqueda -->
+    
+    <div class="search__floater">
+        <div class="search__anchor">
+          <form id="search-form" action="get">
+                <input id="search__bar" class="search__bar" placeholder="Buscando..">
+            <input class="search__submit" id="submit">
+            <div class="search__toggler"></div>
+          </form>
+          
+          </div>
+        </div>
+
+        
     </main>
 </body>
 <footer>
@@ -156,6 +326,7 @@
             PERTENECEN EXCLUSIVAMENTE A SUS CREADORES POR ESTO NO PERTENECEN AL TEAM MVP, SU USO ES NETAMENTE
             PEDAGÓGICO.</p>
     </section>
+    
 </footer>
 <script src="java.js"></script>
 
