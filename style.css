@@ -669,8 +669,13 @@ background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
   overflow: hidden;
   position: relative;
   border-radius: 1vh;
+  transition: transform 0.6s, box-shadow 1.2s;
 }
+.img_riquezas:hover{
+  transform: scale(1.2); 
+  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381); 
 
+}
 .container_3{
   margin: 0px;
   display: flex;
@@ -711,7 +716,14 @@ background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
   overflow: hidden;
   position: relative;
   border-radius: 1vh;
+  transition: transform 0.6s, box-shadow 1.2s;
 }
+.img_biodiversidad:hover{
+  transform: scale(1.2); 
+  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381); 
+}
+
+
 
 .container_4{
   margin: 0px;
@@ -754,8 +766,13 @@ background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
   overflow: hidden;
   position: relative;
   border-radius: 1vh;
+  transition: transform 0.6s, box-shadow 1.2s;
 }
 
+.img_bogotá:hover{
+  transform: scale(1.2); 
+  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381); 
+}
 h3{
   transition: all 0.3s;
   color: white;
