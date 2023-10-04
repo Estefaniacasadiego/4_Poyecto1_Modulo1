@@ -673,8 +673,10 @@ background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
 }
 .img_riquezas:hover{
   transform: scale(1.2); 
-  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381); 
-
+  box-shadow: 
+      5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
+     8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
+      10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */
 }
 .container_3{
   margin: 0px;
@@ -720,7 +722,10 @@ background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
 }
 .img_biodiversidad:hover{
   transform: scale(1.2); 
-  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381); 
+  box-shadow: 
+  5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
+  8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
+  10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */ 
 }
 
 
@@ -771,7 +776,10 @@ background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
 
 .img_bogotá:hover{
   transform: scale(1.2); 
-  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381); 
+  box-shadow: 
+      5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
+     8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
+      10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */
 }
 h3{
   transition: all 0.3s;
