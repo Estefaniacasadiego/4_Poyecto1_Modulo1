@@ -25,26 +25,92 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-/* ESTRELLA */
 
-$(':radio').change(function() {
-    console.log('New star rating: ' + this.value);
-  });
 
-/* buscador */
+/*Chat Emergente*/
 
-const search__floater = document.getElementById('search__floater');
-const searchInput = document.getElementById('searchInput');
-const buscador_viaje = document.querySelectorAll('buscador_viaje');
+const mostrarChat1 = document.getElementById('mostrarChat');
+const enviarMensajeBtn = document.getElementById('enviarMensaje');
+const mensajeInput = document.getElementById('mensaje');
+const cuerpoChat = document.querySelector('.cuerpo-chat');
+const ventanaEmergente = document.getElementById('ventanaEmergente');
+const cerrarVentanaBtn = document.getElementById('cerrarVentana');
 
-document.getElementById('event-search-form').addEventListener('submit'), function (e) {
-    e.preventDefault(); }
-    const searchTerm = searchInput.value.toLowerCase().trim();
-    buscador_viaje.forEach(body => {
-        const abuscador_viajeContent = buscador_viaje.textContent.toLowerCase();
-        if (buscador_viajeContent.includes(searchTerm)) {
-            buscador_viaje.style.display = 'block';
+let ventanaVisible = false;
+
+mostrarChat1.addEventListener('click', () => {
+    if (!ventanaVisible) {
+        ventanaEmergente.style.display = 'block';
+        ventanaVisible = true;
+    } else {
+        ventanaEmergente.style.display = 'none';
+        ventanaVisible = false;
+    }
+});
+
+function agregarTimestamp() {
+    const timestamp = new Date().toLocaleString();
+    const timestampElement = document.createElement('span');
+    timestampElement.classList.add('timestamp');
+    timestampElement.textContent = timestamp;
+    return timestampElement;
+}
+
+function enviarMensaje() {
+    const mensaje = mensajeInput.value;
+    if (mensaje.trim() !== '') {
+        const nuevoMensaje = document.createElement('h7');
+        const mensajeTexto = document.createElement('p');
+        mensajeTexto.textContent = mensaje;
+        mensajeTexto.classList.add('mensaje_chat');
+        const timestampElement = agregarTimestamp();
+        nuevoMensaje.appendChild(mensajeTexto);
+        nuevoMensaje.appendChild(timestampElement);
+
+        if (mensaje.trim() == '1') {
+            const respuestaMensaje = document.createElement('h6');
+            const link = document.createElement('a');            
+            link.href = 'https://maps.app.goo.gl/dZHZehJbmSgHkq8D9';
+            link.textContent = 'Esta es su ubicación para Caño Cristales';
+            link.target = 'https://maps.app.goo.gl/dZHZehJbmSgHkq8D9';            
+            respuestaMensaje.appendChild(link);
+            nuevoMensaje.appendChild(respuestaMensaje);
+        } else if (mensaje.trim() == '2') {
+            const respuestaMensaje = document.createElement('h6');
+            const link = document.createElement('a');
+            link.href = 'https://maps.app.goo.gl/Suk7ZxKYN5y7P57EA';
+            link.textContent = 'Esta es su ubicación para Piedra Peñol';
+            link.target = 'https://maps.app.goo.gl/Suk7ZxKYN5y7P57EA';
+            respuestaMensaje.appendChild(link);
+            nuevoMensaje.appendChild(respuestaMensaje);
+        } else if (mensaje.trim() == '3') {          
+            const respuestaMensaje = document.createElement('h6');
+            const link = document.createElement('a');
+            link.href = 'https://maps.app.goo.gl/WspG3Z8vjCGMSsMFA';
+            link.textContent = 'Esta es su ubicación para Monserrate';
+            link.target = 'https://maps.app.goo.gl/WspG3Z8vjCGMSsMFA';
+            respuestaMensaje.appendChild(link);
+            nuevoMensaje.appendChild(respuestaMensaje);
         } else {
-            buscador_viaje.style.display = 'none';
+            const respuestaMensaje = document.createElement('h6');
+            respuestaMensaje.textContent = 'Inténtalo de nuevo';
+            nuevoMensaje.appendChild(respuestaMensaje);
         }
-    });
+
+        cuerpoChat.appendChild(nuevoMensaje);
+        cuerpoChat.scrollTop = cuerpoChat.scrollHeight;
+        mensajeInput.value = '';
+    }
+}
+enviarMensajeBtn.addEventListener('click', enviarMensaje);
+
+mensajeInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        enviarMensaje();
+    }
+});
+
+cerrarVentanaBtn.addEventListener('click', () => {
+    ventanaEmergente.style.display = 'none';
+    ventanaVisible = false;
+});
