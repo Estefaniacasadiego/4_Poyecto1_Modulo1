@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+<body class="main_registro">  
+    <main>
+        <h2 class="title_registro">Registro de Usuario</h2>
+        <form id="registrationForm">
+            <section class="grid_registro">
+                <label for="usuario">Nombre de usuario: </label>
+                <input class="input_texto_registro" type="text" id="usuario" name="usuario" required><br><br>
+            </section>
+
+            <section class="grid_registro">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" maxlength="8" id="contraseña" conteseña="contraseña" required><br><br>
+            </section>
+  
+            <section class="grid_registro">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" correo="correo" required><br><br>
+            </section>
+
+            <section class="grid_registro">
+                <label for="edad">Fecha de nacimiento:</label>
+                <input type="date" id="edad" edad="edad" required><br><br>
+            </section>
+
+            <button class="button_registro" type="submit" value="Registrarse">Registrar</button>
+            <button class="button_registro" id="openDialogButton">Iniciar sesión</button>
+        </form>
+    </main>
+
+</body>
+<script src="java.js"></script>
+</html>
