@@ -680,15 +680,17 @@ video {
   position: relative;
   border-radius: 1vh;
   transition: transform 0.6s, box-shadow 1.2s;
-}
-
-.img_riquezas:hover {
-  transform: scale(1.2);
-  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381);
 
 }
+.img_riquezas:hover{
+  transform: scale(1.2); 
+  box-shadow: 
+      5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
+     8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
+      10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */
+}
+.container_3{
 
-.container_3 {
   margin: 0px;
   display: flex;
   margin-bottom: 5vh;
@@ -732,14 +734,20 @@ video {
   transition: transform 0.6s, box-shadow 1.2s;
 }
 
-.img_biodiversidad:hover {
-  transform: scale(1.2);
-  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381);
+.img_biodiversidad:hover{
+  transform: scale(1.2); 
+  box-shadow: 
+  5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
+  8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
+  10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */ 
+
 }
 
 
 
-.container_4 {
+
+.container_4{
+
   margin: 0px;
   display: flex;
   margin-bottom: 5vh;
@@ -783,12 +791,16 @@ video {
   transition: transform 0.6s, box-shadow 1.2s;
 }
 
-.img_bogotá:hover {
-  transform: scale(1.2);
-  box-shadow: 10px 30px 20px rgba(6, 1, 1, 0.381);
-}
 
-h3 {
+.img_bogotá:hover{
+  transform: scale(1.2); 
+  box-shadow: 
+      5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
+     8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
+      10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */
+}
+h3{
+
   transition: all 0.3s;
   color: white;
   background: #ffffff26;
