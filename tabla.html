@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOMBIA</title>
+    <link rel="stylesheet" href="./tabla.css">
+
+</head>
+
+<header>
+    <!--menu -->
+    <nav class="nav container" id="nav">
+        <img src="recursos/logo.png" class="logo">
+
+        <ul class="nav__links">
+            <a href="#conoce" class="nav__link">Conoce</a>
+            </li>
+            <li class="nav__item">
+                <a href="#planifica" class="nav__link">Planifica</a>
+            </li>
+            <li class="nav__item">
+                <a href="#comida" class="nav__link">Gastronomia</a>
+            </li>
+            <li class="nav__item">
+                <a href="#contacto" class="nav__link">Contáctanos</a>
+            </li>
+        </ul>
+
+        <!-- menu hamburguesa-->
+
+        <a href="#nav" class="nav__hamburguer">
+            <img src="./recursos/menu.svg" class="nav__icon">
+        </a>
+        <a href="#" class="nav__close">
+            <img src="./recursos/close.svg" class="nav__icon">
+        </a>
+
+    </nav>
+</header>
+
+<body >
+    <article id=ciudad>
+        <input type="text" id="search_ed" placeholder="Buscar...">
+        
+        <ul class="filters">
+        <button class="filter-button_ed" data-filter="Frio">Frio</button>
+        <button class="filter-button_ed" data-filter="Calido">Calido</button>
+        <button class="filter-button_ed" data-filter="Templado">Templado</button>
+        <button class="filter-button_ed" data-filter="Todos">Todos</button>
+      </ul>
+      
+      
+         <div id="talent-list"></div>
+      </article>
+</body>
+
+
+<script src="tabla.js"></script>
+
+</html>
