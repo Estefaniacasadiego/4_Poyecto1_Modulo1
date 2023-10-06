@@ -220,20 +220,20 @@ cerrarVentanaBtn.addEventListener('click', () => {
     ventanaVisible = false;
 });*/
 
-const mostrarChat1 = document.getElementById('mostrarChat');
-const enviarMensajeBtn = document.getElementById('enviarMensaje');
-const mensajeInput = document.getElementById('mensaje');
-const cuerpoChat = document.querySelector('.cuerpo-chat');
-const ventanaEmergente = document.getElementById('ventanaEmergente');
-const cerrarVentanaBtn = document.getElementById('cerrarVentana');
+const mostrarChat1 = document.getElementById("mostrarChat");
+const enviarMensajeBtn = document.getElementById("enviarMensaje");
+const mensajeInput = document.getElementById("mensaje");
+const cuerpoChat = document.querySelector(".cuerpo-chat");
+const ventanaEmergente = document.getElementById("ventanaEmergente");
+const cerrarVentanaBtn = document.getElementById("cerrarVentana");
 
 let ventanaVisible = false;
-mostrarChat1.addEventListener('click', () => {
+mostrarChat1.addEventListener("click", () => {
     if (!ventanaVisible) {
-        ventanaEmergente.style.display = 'block';
+        ventanaEmergente.style.display = "block";
         ventanaVisible = true;
     } else {
-        ventanaEmergente.style.display = 'none';
+        ventanaEmergente.style.display = "none";
         ventanaVisible = false;
     }
 });
@@ -241,8 +241,8 @@ mostrarChat1.addEventListener('click', () => {
 
 function agregarTimestamp() {
     const timestamp = new Date().toLocaleString();
-    const timestampElement = document.createElement('span');
-    timestampElement.classList.add('timestamp');
+    const timestampElement = document.createElement("span");
+    timestampElement.classList.add("timestamp");
     timestampElement.textContent = timestamp;
     return timestampElement;
 }
@@ -268,13 +268,13 @@ function enviarMensaje() {
 
     body.messages.push(mensajeUsuario)
     
-    if (mensaje.trim() !== '') {
+    if (mensaje.trim() !== "") {
         mensajeInput.value = ""
 
-        const nuevoMensaje = document.createElement('h7');
-        const mensajeTexto = document.createElement('p');
+        const nuevoMensaje = document.createElement("h7");
+        const mensajeTexto = document.createElement("p");
         mensajeTexto.textContent = mensaje;
-        mensajeTexto.classList.add('mensaje_chat');
+        mensajeTexto.classList.add("mensaje_chat");
         const timestampElement = agregarTimestamp();
         nuevoMensaje.appendChild(mensajeTexto);
         nuevoMensaje.appendChild(timestampElement);
@@ -287,9 +287,9 @@ function enviarMensaje() {
                 let mensajeChatGPT = jsonData.choices[0].message.content
                 body.messages.push(jsonData.choices[0].message)
 
-                const respuestaMensaje = document.createElement('h6');
+                const respuestaMensaje = document.createElement("h6");
                 respuestaMensaje.textContent = mensajeChatGPT
-                respuestaMensaje.classList.add('mensaje_chat')
+                respuestaMensaje.classList.add("mensaje_chat")
                 cuerpoChat.appendChild(respuestaMensaje)
                 cuerpoChat.scrollTop = cuerpoChat.scrollHeight;
             })
@@ -299,15 +299,15 @@ function enviarMensaje() {
     }
 }
 
-enviarMensajeBtn.addEventListener('click', enviarMensaje);
-mensajeInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
+enviarMensajeBtn.addEventListener("click", enviarMensaje);
+mensajeInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
         enviarMensaje();
     }
 });
 
-cerrarVentanaBtn.addEventListener('click', () => {
-    ventanaEmergente.style.display = 'none';
+cerrarVentanaBtn.addEventListener("click", () => {
+    ventanaEmergente.style.display = "none";
     ventanaVisible = false;
 });
 
