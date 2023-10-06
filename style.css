@@ -1057,10 +1057,12 @@ footer {
 
 .cerrar {
   position: absolute;
-  top: 5px;
+  top: -5px;
   right: 5px;
-  font-size: 40px;
+  font-size: 45px;
   cursor: pointer;
+  display: flex;
+  align-items: end;
 }
 
 .message-text-input {
@@ -1069,14 +1071,25 @@ footer {
   padding: 5px;
 }
 
-h7 {
+.mensaje_usuario {
   font-size: 12px;
   color: #1b1818;
   text-align: end;
-  background-color: #bebcbc;
+  background-color: #cfc7c744;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;  
+}
+
+h7 {
+  font-size: 12px;
+  color: #1b1818;
+  background-color: #cfc7c7;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-self: flex-end;  
 }
 
 h6 {
@@ -1084,10 +1097,12 @@ h6 {
   color: #fff;
   display: flex;
   text-align: start;
-  background-color: #050505;
-  padding: 10px;
-  margin: 10px;
+  background-color: #f8f5f5;
+  padding: 15px;
+  margin: 15px;
   border-radius: 5px;
+  z-index: 6;
+  
  
 }
 .pregunta-inicial {
@@ -1098,9 +1113,9 @@ h6 {
 }
 
 .mensaje_chat {
-  font-size: 18px;
-  color: rgb(24, 23, 23);
-  text-align: end;  
+  font-size: 14px;
+  color: rgb(5, 5, 5);
+  text-align: start;  
 }
 
 .opciones_chat {
@@ -1116,6 +1131,10 @@ h6 {
 
 a{
   color: white;
+}
+.timestamp{
+  font-size: 9px;
+  
 }
 
 /*registro*/
