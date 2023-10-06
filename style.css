@@ -1157,11 +1157,20 @@ a{
   margin-left: 4vw;
 }
 
+.registroForm{
+  margin-bottom: 100px;
+}
+
 .grid_registro{
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.button_registro{
-  margin-left: 2.2vw;
+.boton_Regis_auten{
+  margin-left: 115px;
+  background-color: rgba(28, 39, 32, 0.651);
+}
+
+.inicioForm{
+  margin-bottom: 100px;
 }
