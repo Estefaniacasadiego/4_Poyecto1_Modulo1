@@ -661,7 +661,7 @@ video {
 }
 
 .riquezat {
-  text-align: left;
+  text-align: justify;
   color: black;
   font-size: 2.5vh;
   padding-left: 15vw;
@@ -674,7 +674,7 @@ video {
   float: right;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 15vh;
+  margin-top: 19.5vh;
   border: rgb(124, 124, 123);
   overflow: hidden;
   position: relative;
@@ -685,9 +685,9 @@ video {
 .img_riquezas:hover{
   transform: scale(1.2); 
   box-shadow: 
-      5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
-     8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
-      10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */
+      5px 15px 18px rgba(255, 251, 0, 0.79), 
+     8px 24px 15px rgb(14, 18, 246), 
+      10px 32px 20px rgba(255, 11, 11, 0.904); 
 }
 .container_3{
 
@@ -713,7 +713,7 @@ video {
 }
 
 .llamativot {
-  text-align: left;
+  text-align: justify;
   color: black;
   font-size: 2.5vh;
   padding-left: 15vw;
@@ -726,7 +726,7 @@ video {
   float: right;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 8vh;
+  margin-top: 19.5vh;
   border: rgb(124, 124, 123);
   overflow: hidden;
   position: relative;
@@ -737,9 +737,9 @@ video {
 .img_biodiversidad:hover{
   transform: scale(1.2); 
   box-shadow: 
-  5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
-  8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
-  10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */ 
+  5px 15px 18px rgba(255, 251, 0, 0.79), 
+  8px 24px 15px rgb(14, 18, 246), 
+  10px 32px 20px rgba(255, 11, 11, 0.904); 
 
 }
 
@@ -770,7 +770,7 @@ video {
 }
 
 .vivet {
-  text-align: left;
+  text-align: justify;
   color: black;
   font-size: 2.5vh;
   padding-left: 15vw;
@@ -783,7 +783,7 @@ video {
   float: right;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 8vh;
+  margin-top: 15.5vh;
   border: rgb(124, 124, 123);
   overflow: hidden;
   position: relative;
@@ -795,9 +795,9 @@ video {
 .img_bogotá:hover{
   transform: scale(1.2); 
   box-shadow: 
-      5px 15px 18px rgba(255, 251, 0, 0.79), /* Sombra en azul */
-     8px 24px 15px rgb(14, 18, 246), /* Sombra en amarillo */
-      10px 32px 20px rgba(255, 11, 11, 0.904); /* Sombra en azul oscuro */
+      5px 15px 18px rgba(255, 251, 0, 0.79), 
+     8px 24px 15px rgb(14, 18, 246), 
+      10px 32px 20px rgba(255, 11, 11, 0.904); 
 }
 h3{
 
@@ -1057,12 +1057,10 @@ footer {
 
 .cerrar {
   position: absolute;
-  top: -5px;
+  top: 5px;
   right: 5px;
-  font-size: 45px;
+  font-size: 40px;
   cursor: pointer;
-  display: flex;
-  align-items: end;
 }
 
 .message-text-input {
@@ -1071,25 +1069,14 @@ footer {
   padding: 5px;
 }
 
-.mensaje_usuario {
-  font-size: 12px;
-  color: #1b1818;
-  text-align: end;
-  background-color: #cfc7c744;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;  
-}
-
 h7 {
   font-size: 12px;
   color: #1b1818;
-  background-color: #cfc7c7;
+  text-align: end;
+  background-color: #bebcbc;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
-  display: flex;
-  align-self: flex-end;  
+  border-radius: 5px;  
 }
 
 h6 {
@@ -1097,12 +1084,10 @@ h6 {
   color: #fff;
   display: flex;
   text-align: start;
-  background-color: #f8f5f5;
-  padding: 15px;
-  margin: 15px;
+  background-color: #050505;
+  padding: 10px;
+  margin: 10px;
   border-radius: 5px;
-  z-index: 6;
-  
  
 }
 .pregunta-inicial {
@@ -1113,9 +1098,9 @@ h6 {
 }
 
 .mensaje_chat {
-  font-size: 14px;
-  color: rgb(5, 5, 5);
-  text-align: start;  
+  font-size: 18px;
+  color: rgb(24, 23, 23);
+  text-align: end;  
 }
 
 .opciones_chat {
@@ -1131,10 +1116,6 @@ h6 {
 
 a{
   color: white;
-}
-.timestamp{
-  font-size: 9px;
-  
 }
 
 /*registro*/
@@ -1157,20 +1138,11 @@ a{
   margin-left: 4vw;
 }
 
-.registroForm{
-  margin-bottom: 100px;
-}
-
 .grid_registro{
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.boton_Regis_auten{
-  margin-left: 115px;
-  background-color: rgba(28, 39, 32, 0.651);
-}
-
-.inicioForm{
-  margin-bottom: 100px;
+.button_registro{
+  margin-left: 2.2vw;
 }
