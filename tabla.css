@@ -139,7 +139,7 @@ a:hover {
 
 
 
-body {background-image:url(fondo02.png);
+body {background-image:url(recursos/fondo02.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -174,11 +174,11 @@ body {background-image:url(fondo02.png);
     font-weight: bold;
   }
   
-  input{
+input{
     width: 50vw;
     padding: 10px;
     outline: none;
-    margin-left: 3%;
+    margin-left: 45%;
     border: 5px solid #e6ebfd;
     font-weight: 600;
 }
